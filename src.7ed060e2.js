@@ -26671,15 +26671,20 @@ var toLink = function toLink(t) {
     case 'github':
       return _react.default.createElement("a", {
         href: "http://github.com/retroverse"
-      }, " ", t, " ");
+      }, t);
 
     case 'twitter':
       return _react.default.createElement("a", {
         href: "http://twitter.com/giraughing"
-      }, " ", t, " ");
+      }, t);
+
+    case 'itch.io':
+      return _react.default.createElement("a", {
+        href: "https://tdos.itch.io"
+      }, t);
 
     default:
-      return _react.default.createElement("a", null, " ", t, " ");
+      return _react.default.createElement("a", null, t);
   }
 };
 
@@ -26850,6 +26855,18 @@ exports.education = [{
   location: 'RMIT',
   startYear: 2020,
   endYear: "Ongoing"
+}, {
+  type: 'C4 Hospitality',
+  notes: [],
+  location: 'Serve It Up',
+  startYear: 2020,
+  endYear: "Ongoing"
+}, {
+  type: 'C4 Leadership & Management',
+  notes: [],
+  location: 'Serve It Up',
+  startYear: 2020,
+  endYear: "Ongoing"
 }];
 exports.projects = [{
   title: 'Hex-Redux',
@@ -26932,9 +26949,20 @@ exports.employment = [{
   notes: ['Customer Service', 'Sales', 'Safety'],
   startYear: 2016,
   endYear: 2020
-}];
-exports.skillsDescription = "\nI have studied programming now for a handful of years and have a\nparticular passion for functional programming with languages like Haskell and Javascript.\nAdditionally, I have studied several real-world languages, namely, Indonesian and Japanese. On top of that,\nI really enjoy user interface design and composition work.\n";
-exports.footerText = "Ewan Breakey 2020~github~twitter";
+}, {
+  name: 'Programming Tutor',
+  notes: ['Education', 'Computer Science', 'Self-Employed'],
+  startYear: 2020,
+  endYear: 'Ongoing'
+}]; // export const skillsDescription = `
+// I have studied programming now for a handful of years and have a
+// particular passion for functional programming with languages like Haskell and Javascript.
+// Additionally, I have studied several real-world languages, namely, Indonesian and Japanese. On top of that,
+// I really enjoy user interface design and composition work.
+// `
+
+exports.skillsDescription = "\nI have a love for programming and have been self-teaching for several years now. Over this time, I have developed a\ngreat passion for functional programming such as with Haskell and Javascript. Recently I have begun tutoring in\nbasic programming and sharing my knowledge with others. Aside from computer science, I enjoy design work, illustration and\nlearning Japanese.\n";
+exports.footerText = "Ewan Breakey 2020~github~twitter~itch.io";
 var data = {
   name: 'Ewan Breakey',
   bio: "",
@@ -27088,7 +27116,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49715" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62493" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
